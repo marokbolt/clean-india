@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>A United India, A Clean India</title>
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111111;
+      --muted: #666666;
+      --accent: #0f766e;
+      --light: #f4f4f4;
+      --danger: #b91c1c;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    h1, h2, h3 {
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      color: var(--muted);
+      max-width: 680px;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 24px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      max-width: 900px;
+    }
+
+    .hero .tagline {
+      font-size: 1.2rem;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    /* SPLIT */
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+    }
+
+    @media (max-width: 900px) {
+      .split {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .card {
+      background: var(--light);
+      padding: 40px;
+      border-radius: 16px;
+    }
+
+    /* LISTS */
+    ul {
+      list-style: none;
+      margin-top: 16px;
+    }
+
+    li {
+      padding: 8px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    /* PROCESS */
+    ol {
+      margin-top: 24px;
+      padding-left: 20px;
+    }
+
+    ol li {
+      margin-bottom: 16px;
+      color: var(--muted);
+    }
+
+    /* RULES */
+    .rules li {
+      color: var(--danger);
+      font-weight: 500;
+    }
+
+    /* COMING SOON */
+    .coming-soon {
+      text-align: center;
+      background: var(--text);
+      color: white;
+    }
+
+    .coming-soon h2 {
+      font-size: clamp(3rem, 6vw, 5rem);
+      margin-bottom: 20px;
+    }
+
+    .coming-soon p {
+      color: #cccccc;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    footer {
+      padding: 40px 10%;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="tagline">A United India, A Clean India</div>
+    <h1>
+      One day. One country. 
+      <br>₹1 crore to be won.
+    </h1>
+    <p>
+      Teams across India compete to clean real public spaces in a single day.
+      Every sack counted. Every claim verified.
+      <br>
+      <br>
+      Prizes:
+₹25 lakh, ₹20 lakh, ₹15 lakh —
+plus ₹1 lakh each for the next 50 teams.
+    </p>
+  </section>
+
+  <!-- WHAT + REWARDS -->
+  <section class="split">
+    <div>
+      <h2>What is this?</h2>
+     <p style="margin-top:16px;">
+
+I was in Madurai recently and spent time around the temple area. It was filthy. This is a city that sees millions of visitors and has deep cultural and religious importance, yet the public spaces around it are treated like dumping grounds. 
+
+ </p>
+      <p style="margin-top:16px;">
+A few weeks later I read that Madurai had <s>appeared on</s> topped a list of India’s dirtiest cities.That made the problem feel concrete rather than abstract. We clearly do not have a working way to deal with this at scale, so this is an attempt to try something direct and measurable.
+      </p>
+      <p style="margin-top:16px;">
+        It is a measurable, documented, competitive event with real consequences.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Rewards</h3>
+      <ul>
+        <li><strong>1st Place:</strong> ₹25,00,000</li>
+        <li><strong>2nd Place:</strong> ₹20,00,000</li>
+        <li><strong>3rd Place:</strong> ₹15,00,000</li>
+        <li><strong>Next 50 Teams:</strong> ₹1,00,000 each</li>
+      </ul>
+      <p style="margin-top:16px;">
+        ₹50L is kept aside so teams don’t have to pay for basic safety gear themselves.
+      </p>
+    </div>
+  </section>
+
+  
+  <!-- COMING SOON -->
+  <section class="coming-soon">
+    <h2>Coming Soon*</h2>
+    <p>
+      *As soon as someone funds ₹1.5 crore for prizes and logistics
+      and the Prime Minister declares a national holiday for this.
+    </p>
+  </section>
+
+
