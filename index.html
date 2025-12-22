@@ -11,7 +11,6 @@
       --text: #111111;
       --muted: #666666;
       --light: #f4f4f4;
-      --danger: #b91c1c;
     }
 
     * {
@@ -26,30 +25,6 @@
       color: var(--text);
       line-height: 1.55;
     }
-
-    }.coming-soon-banner {
-  min-height: 100vh;
-  background: #000;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 40px;
-}
-
-.coming-soon-banner h2 {
-  font-size: clamp(3rem, 6vw, 5rem);
-  margin-bottom: 20px;
-  font-weight: 600;
-}
-
-.coming-soon-banner p {
-  color: #bbb;
-  font-size: 1rem;
-  max-width: 600px;
-}
-
 
     section {
       padding: 80px 10%;
@@ -71,15 +46,14 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 24px;
+      gap: 20px;
     }
 
     .hero .tagline {
-      font-size: 1rem;
+      font-size: 0.9rem;
       color: #444;
-      font-weight: 500;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.08em;
     }
 
     .hero h1 {
@@ -100,45 +74,31 @@
       }
     }
 
-    .card {
-      background: var(--light);
-      padding: 40px;
-      border-radius: 16px;
-    }
+    /* FULLSCREEN COMING SOON */
+    .coming-soon-banner {
+      width: 100vw;
+      min-height: 100vh;
+      background: #000;
+      color: #fff;
 
-    ul {
-      list-style: none;
-      margin-top: 16px;
-    }
-
-    li {
-      padding: 8px 0;
-      border-bottom: 1px solid #ddd;
-    }
-
-    /* COMING SOON */
-    .coming-soon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      background: var(--text);
-      color: white;
+
+      margin-left: calc(-50vw + 50%);
+      padding: 40px;
     }
 
-    .coming-soon h2 {
+    .coming-soon-banner h2 {
       font-size: clamp(3rem, 6vw, 5rem);
       margin-bottom: 20px;
     }
 
-    .coming-soon p {
-      color: #cccccc;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-
-    footer {
-      padding: 40px 10%;
-      text-align: center;
-      font-size: 0.9rem;
-      color: var(--muted);
+    .coming-soon-banner p {
+      color: #bbb;
+      max-width: 600px;
+      font-size: 1rem;
     }
   </style>
 </head>
@@ -147,11 +107,11 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="tagline">Let's clean up </div>
+    <div class="tagline">Let’s clean up</div>
 
     <h1>
       One day. One city.<br>
-      50 Lakhs to clean Bengaluru.
+      ₹50 lakh to clean Bengaluru.
     </h1>
 
     <p>
@@ -164,10 +124,10 @@
       Prizes: ₹10 lakh, ₹5 lakh, ₹2.5 lakh —
       plus ₹1 lakh each for the next 20 teams.
     </p>
-    
+
     <p>
-     ₹10 lakh is kept aside so teams do not have to pay for
-        basic safety and cleaning equipment themselves.
+      ₹10 lakh is set aside so teams don’t pay for
+      basic safety and cleaning equipment.
     </p>
 
     <p style="color:#444;">
@@ -181,33 +141,32 @@
       <h2>Why this</h2>
 
       <p style="margin-top:16px;">
-  I was in Madurai recently and spent time around the temple area. It was filthy. This is a city that sees millions of visitors and has deep cultural and religious importance, yet the public spaces around it are treated like dumping grounds. 
-
+        I was in Madurai recently and spent time around the temple area. It was filthy.
+        This is a city with deep cultural and religious importance, yet public spaces
+        around it are treated like dumping grounds.
       </p>
 
       <p style="margin-top:16px;">
         Recently, Madurai <s>appeared on</s> topped multiple lists of India’s dirtiest cities.
         That made the problem concrete.
-        If this is the situation here, it makes sense to start here.
       </p>
 
       <p style="margin-top:16px;">
-        This is a pilot.
-        One city. One day.
+        This is a pilot. One city. One day.
         A direct way to test whether incentives and public accountability can work.
       </p>
     </div>
+  </section>
 
-
-  <!-- COMING SOON -->
-<section class="coming-soon">
-  <h2>Coming Soon*</h2>
-  <p>
-    *As soon as someone funds 50 Lakhs for this idea. 
-  </p>
-</section>
-
-
+  <!-- FULLSCREEN END BANNER -->
+  <section class="coming-soon-banner">
+    <div>
+      <h2>Coming soon*</h2>
+      <p>
+        *As soon as ₹50 lakh is funded.
+      </p>
+    </div>
+  </section>
 
 </body>
 </html>
