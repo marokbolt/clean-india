@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>A United India, A Clean India</title>
+  <title>This is not normal</title>
 
   <style>
     :root {
       --bg: #ffffff;
       --text: #111111;
       --muted: #666666;
-      --accent: #0f766e;
       --light: #f4f4f4;
       --danger: #b91c1c;
     }
@@ -39,7 +38,7 @@
 
     p {
       color: var(--muted);
-      max-width: 680px;
+      max-width: 700px;
     }
 
     /* HERO */
@@ -51,15 +50,17 @@
       gap: 24px;
     }
 
+    .hero .tagline {
+      font-size: 1rem;
+      color: #444;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
     .hero h1 {
       font-size: clamp(2.5rem, 6vw, 4rem);
       max-width: 900px;
-    }
-
-    .hero .tagline {
-      font-size: 1.2rem;
-      color: var(--accent);
-      font-weight: 500;
     }
 
     /* SPLIT */
@@ -81,7 +82,6 @@
       border-radius: 16px;
     }
 
-    /* LISTS */
     ul {
       list-style: none;
       margin-top: 16px;
@@ -90,23 +90,6 @@
     li {
       padding: 8px 0;
       border-bottom: 1px solid #ddd;
-    }
-
-    /* PROCESS */
-    ol {
-      margin-top: 24px;
-      padding-left: 20px;
-    }
-
-    ol li {
-      margin-bottom: 16px;
-      color: var(--muted);
-    }
-
-    /* RULES */
-    .rules li {
-      color: var(--danger);
-      font-weight: 500;
     }
 
     /* COMING SOON */
@@ -140,61 +123,71 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="tagline">A United India, A Clean India</div>
+    <div class="tagline">Let's clean up </div>
+
     <h1>
-      One day. One country. 
-      <br>₹1 crore to be won.
+      One day. One city.<br>
+      50 Lakhs to clean Bengaluru.
     </h1>
+
     <p>
-      Teams across India compete to clean real public spaces in a single day.
-      Every sack counted. Every claim verified.
-      <br>
-      <br>
-      Prizes:
-₹25 lakh, ₹20 lakh, ₹15 lakh —
-plus ₹1 lakh each for the next 50 teams.
+      Teams across Bengaluru clean real public spaces in a single day.
+      Waste is counted in standardised sacks.
+      Proof is public and verifiable.
+    </p>
+
+    <p>
+      Prizes: ₹10 lakh, ₹5 lakh, ₹2.5 lakh —
+      plus ₹1 lakh each for the next 20 teams.
+    </p>
+    
+    <p>
+     ₹10 lakh is kept aside so teams do not have to pay for
+        basic safety and cleaning equipment themselves.
+    </p>
+
+    <p style="color:#444;">
+      Pilot city: Bengaluru.
     </p>
   </section>
 
-  <!-- WHAT + REWARDS -->
+  <!-- WHY -->
   <section class="split">
     <div>
-      <h2>What is this?</h2>
-     <p style="margin-top:16px;">
+      <h2>Why this</h2>
 
-I was in Madurai recently and spent time around the temple area. It was filthy. This is a city that sees millions of visitors and has deep cultural and religious importance, yet the public spaces around it are treated like dumping grounds. 
-
- </p>
       <p style="margin-top:16px;">
-A few weeks later I read that Madurai had <s>appeared on</s> topped a list of India’s dirtiest cities.That made the problem feel concrete rather than abstract. We clearly do not have a working way to deal with this at scale, so this is an attempt to try something direct and measurable.
+  I was in Madurai recently and spent time around the temple area. It was filthy. This is a city that sees millions of visitors and has deep cultural and religious importance, yet the public spaces around it are treated like dumping grounds. 
+
       </p>
-      <p style="margin-top:16px;">
-        It is a measurable, documented, competitive event with real consequences.
-      </p>
-    </div>
 
-    <div class="card">
-      <h3>Rewards</h3>
-      <ul>
-        <li><strong>1st Place:</strong> ₹25,00,000</li>
-        <li><strong>2nd Place:</strong> ₹20,00,000</li>
-        <li><strong>3rd Place:</strong> ₹15,00,000</li>
-        <li><strong>Next 50 Teams:</strong> ₹1,00,000 each</li>
-      </ul>
       <p style="margin-top:16px;">
-        ₹50L is kept aside so teams don’t have to pay for basic safety gear themselves.
+        Recently, Madurai <s>appeared on</s> topped multiple lists of India’s dirtiest cities.
+        That made the problem concrete.
+        If this is the situation here, it makes sense to start here.
+      </p>
+
+      <p style="margin-top:16px;">
+        This is a pilot.
+        One city. One day.
+        A direct way to test whether incentives and public accountability can work.
       </p>
     </div>
-  </section>
 
-  
+
   <!-- COMING SOON -->
   <section class="coming-soon">
     <h2>Coming Soon*</h2>
     <p>
-      *As soon as someone funds ₹1.5 crore for prizes and logistics
-      and the Prime Minister declares a national holiday for this.
+      *As soon as ₹50 crore is secured for prizes and logistics.
+      If it gets funded, it runs.
+      If not, it stays an idea.
     </p>
   </section>
 
+  <footer>
+    A public experiment. Built openly.
+  </footer>
 
+</body>
+</html>
